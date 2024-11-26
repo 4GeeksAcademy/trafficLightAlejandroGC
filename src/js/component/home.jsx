@@ -30,8 +30,8 @@ const Home = () => {
 				{purpleLight && <Light color="purple" isActive={activeIndex === 3} onShow={() => setActiveIndex(3)} purpleLight={purpleLight}/>}
 			</div>
 			<div className="d-flex flex-column justify-content-center mt-5">
-				<button className="btn btn-secondary my-2" onClick={handleClick}>Change</button>
-				<button className="btn btn-secondary my-2" onClick={()=>setPurpleLight(!purpleLight)}>Add light</button>
+				<button className="btn btn-secondary my-2" onClick={handleClick}>Change light</button>
+				<button className="btn btn-secondary my-2" onClick={()=>setPurpleLight(!purpleLight)}>{purpleLight ? "Delete light" :  "Add light"}</button>
 			</div>
 		</div>
 	);
